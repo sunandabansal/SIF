@@ -2,7 +2,7 @@ from __future__ import print_function
 
 import numpy as np
 import pickle
-from tree import tree
+from .tree import tree
 #from theano import config
 
 def getWordmap(textfile):

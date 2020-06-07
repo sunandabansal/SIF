@@ -4,17 +4,17 @@ from time import time
 import random
 import numpy as np
 
-from params import params
+from .params import params
 import argparse
 
 from theano import config
 import lasagne
 from sklearn.decomposition import TruncatedSVD
 
-import data_io
-from proj_model_sim import proj_model_sim
-from proj_model_sentiment import proj_model_sentiment
-import eval
+from . import data_io
+from .proj_model_sim import proj_model_sim
+from .proj_model_sentiment import proj_model_sentiment
+from . import eval
 
 ##################################################
 def str2bool(v):
